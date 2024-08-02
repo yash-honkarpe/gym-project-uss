@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        .main-hero {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #hero-kick,
+        #hero-aerobics,
+        #hero-strength {
+            text-align: center;
+            font-weight: 700;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        /* #bor1, #bor2{
+            border-right: 1px solid black;
+            padding-bottom: 5px;
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- navbar starts  -->
+
+    <nav class="navbar navbar-expand-lg bg-secondary sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Fit & Fine</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="fit-&-fine-gym-about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fit-&-fine-gym-contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="fit-&-fine-gym-gallery.html">Gallery</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success bg-warning" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- navbar ends -->
+
+
+    <!-- carousel start -->
+
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div style="height: 500px;" class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="gym_img/gym-1.jpg" height="500px" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="gym_img/gym-2.jpg" height="500px" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="gym_img/gym-3.jpg" height="500px" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- carousel end -->
+
+    <p class="h2 text-center pt-3 display-2 fw-bold text-warning"> WELCOME TO THE GYM!</p>
+    <p class="text-center fw-bold">Take care of your body. It's the only place you have to live.</p>
+
+
+
+    <!--Hero Section 1 Start -->
+    <!-- <div class="container"> 
+ <div class="text-center">Our Facilities</div> 
+ <div class="row text-center"> 
+
+     <div class="col border"> 
+         <img src="gym-main.jpg" width="200px" height="200px" alt=""> 
+         GYM 
+     </div> 
+     <div class="col border"> 
+         <img src="cardio-2.jpg" width="200px" eight="200px" alt=""> 
+         CARDIO 
+     </div> 
+     <div class="col border"> 
+         <img src="aerobics-2.jpg" width="200px" eight="200px" alt=""> 
+         AEROBICS 
+     </div> 
+     <div class="col border"> 
+         <img src="zumba.jpg" width="200px" eight="200px" alt=""> 
+         ZUMBA 
+     </div> 
+     <div class="col border"> 
+         <img src="yoga.jpg" width="200px" eight="200px" alt=""> 
+         YOGA 
+     </div> 
+ </div> 
+</div>  -->
+    <!--Hero Section 1 End -->
+
+
+
+    <!-- hero section 2 start  -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col m-0 p-0">
+                <img class="w-100" src="gym_img/the-gym-kikboxing.jpg" height="297px" alt="">
+                <p class="text-center h5">KICK BOXING</p>
+            </div>
+            <div class="col m-0 p-0">
+                <img class="w-100" src="gym_img/the-gym-aerobic.jpg" height="297px" alt="">
+                <p class="text-center h5">AEROBICS</p>
+            </div>
+            <div class="col m-0 p-0">
+                <img class="w-100" src="gym_img/the-gym-strength.jpg" height="297px" alt="">
+                <p class="text-center h5">STRENGTH</p>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col m-0 p-0">
+                <img class="w-100" src="gym_img/the-gym-free-weight.jpg" height="297px" alt="">
+                <p class="text-center h5">FREE WEIGHT</p>
+            </div>
+            <div class="col m-0 p-0">
+                <img class="w-100" src="gym_img/the-gym-power-yoga.jpg" height="297px" alt="">
+                <p class="text-center h5">POWER YOGA</p>
+            </div>
+            <div class="col m-0 p-0">
+                <img class="w-100" src="gym_img/the-gym-zumba.jpg" height="297px" alt="">
+                <p class="text-center h5">ZUMBA</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- hero section 2 ends  -->
+
+
+    <!-- hero section start using css -->
+    <!-- <hr>
+ <div class="main-hero">
+  <div id="hero-kick">
+   <p>KICK BOXING</p>
+   <img src="the-gym-kikboxing.jpg" width="100%" height="297px" alt="">
+  </div>
+
+  <div id="hero-aerobics">
+   <p>AEROBICS</p>
+   <img src="the-gym-aerobic.jpg" width="100%" height="297px" alt="">
+  </div>
+
+  <div id="hero-strength">
+   <p>STRENGTH</p>
+   <img src="the-gym-strength.jpg" width="100%" height="297px" alt="">
+
+  </div>
+ </div> -->
+    <hr>
+
+    <!-- hero section end using css -->
+
+    <!-- card section start -->
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col">
+                <div class="card" style="width:18rem; height: 24rem;">
+                    <img src="gym_img/cardio-2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">CARDIO</h5>
+                        <p class="card-text">Cardiovascular Medicine strongly support cardiovascular exercise as a means of improving physical fitness
+                        </p>
+                        <a href="card-cardio.html" class="btn btn-primary">Explore more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 18rem; height: 24rem;">
+                    <img src="gym_img/aerobics-2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">AEROBICS</h5>
+                        <p class="card-text">Aerobics refers to a system of physical conditioning that combines rhythmic aerobic.
+                        </p>
+                        <a href="card-aerobics.html" class="btn btn-primary">Explore more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 18rem; height: 24rem;">
+                    <img src="gym_img/zumba.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">ZUMBA</h5>
+                        <p class="card-text"> Zumba is a fun, high-energy workout experience that keeps you excited.
+                        </p>
+                        <a href="card-zumba.html" class="btn btn-primary">Explore more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 18rem; height: 24rem;">
+                    <img src="gym_img/yoga.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">YOGA</h5>
+                        <p class="card-text">Yoga has become a global phenomenon over the last several decades.
+                        </p>
+                        <a href="card-yoga.html" class="btn btn-primary">Explore more</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- card section end -->
+
+
+    <br>
+    <hr>
+    <!-- gym info starts  -->
+    <div class="container-fluide">
+        <div class="row border mb-3">
+
+            <div class="col bg-dark text-light display-7">
+                <p class="text-danger h5 display-7 mt-2 ms-3">OUR STORY</p>
+                <p class="ms-3">
+                    THE GYM is the brainchild of our founders G.Khatter who believe that healthy lifestyle lead to
+                    better quality of
+                    life. The main idea is to have our members enjoy their fitness trainings in classy and private
+                    settings. As such, it
+                    is not surprising that THE GYM is passionately led by a team of highly qualified and experienced
+                    fitness instructors
+                    and health professionals. Our team's passion is to serve our members with sheer dedication, warm
+                    friendliness and
+                    joyful helpfulness.
+                </p>
+            </div>
+
+            <div class="col m-0 p-0">
+                <img class="w-100" src="gym_img/gym-main.jpg" height="300px" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- gym info ends -->
+
+
+
+    
+    <!-- card section start -->
+
+    <!-- <div class="card" style="width: 18rem;">
+ <img src="cardio-1.jpg" class="card-img-top" alt="...">
+ <div class="card-body">
+   <h5 class="card-title">Card title</h5>
+   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+   <a href="#" class="btn btn-primary">Go somewhere</a>
+ </div>
+</div> -->
+
+    <BR><BR>
+
+
+    <!-- hot deals start -->
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <p class="h3 text-danger text-center">HOT DEALS</p>
+
+            <div class="col border">
+                <img class="w-50 mx-auto d-block" src="gym_img/hdfcbank.jpg" width="200px" alt="">
+                <p class="text-center h6"> 40% OFF ON YEARLY MEMBERSHIP</p>
+            </div>
+
+            <div class="col border ">
+                <img class="w-50 mx-auto d-block" src="gym_img/icicibank.jpg" width="200px" alt="">
+                <p class="text-center h6"> 40% OFF ON YEARLY MEMBERSHIP</p>
+            </div>
+
+            <div class="col border">
+                <img class="w-50 mx-auto d-block" src="gym_img/nandos.jpg" width="200px" alt="">
+                <p class="text-center h6"> 15% OFF ON THE GYM MEMBERSHIP</p>
+            </div>
+
+        </div>
+    </div>
+
+    <br><br>
+    <div class="container-fluid bg-dark text-light">
+        <div class="row">
+
+            <p class="h4 text-danger text-center">OUR ADVANTAGES</p>
+
+            <div class="col">
+                <ul>
+                    <p class="h6">
+                        <li> Qualified trainers</li>
+                    </p>
+                    <p>
+                        We're sure that one time or another, you've been fascinated at how a trainer facilitates class
+                        and
+                        engages
+                        learners. Youâ€™ve also most likely observed some of the best qualities of a good trainer and
+                        already
+                        somewhat
+                        have an idea of what attributes make a trainer great at their work.
+                    </p>
+
+                    <p class="h6">
+                        <li>Multiple classis </li>
+                    </p>
+                    <p>
+                        We provides multiple classes to our clints Zumba, Aerobics, Kickboxing, Strenght, Power yoga,
+                        Free
+                        weight.
+                    </p>
+
+                    <p class="h6">
+                        <li>Men and Women's changing rooms</li>
+                    </p>
+                    <p>
+                        Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam
+                        id odio
+                        sit amet
+                        mauris.
+                    </p>
+
+                    <p class="h6">
+                        <li>Towels and Lockers</li>
+                    </p>
+                    <p>
+                        Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam
+                        id odio
+                        sit amet
+                        mauris.
+                    </p>
+                </ul>
+            </div>
+
+            <div class="col">
+                <ul>
+                    <p class="h6">
+                        <li>Individual training</li>
+                    </p>
+                    <p>
+                        A personal trainer is an individual certified to have a varying degree of knowledge of general
+                        fitness involved in
+                        exercise prescription and instruction. They motivate clients by setting goals and providing
+                        feedback
+                        and
+                        accountability to clients.</p>
+
+                    <p>
+                    <p class="h6">
+                        <li>Hightech gym</li>
+                    </p>
+                    <p>
+                        Monitoring performance during the one-hour workout, from wearable devices to projection screens,
+                        which help in
+                        getting solidity from long slogans on cardio devices, make use of modern technology to enhance
+                        the
+                        experience of
+                        today's gym exercise.
+                    </p>
+
+                    <p class="h6">
+                        <li>Complimentary Drinks</li>
+                    </p>
+                    <p>
+                        Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam
+                        id
+                        odio sit amet
+                        mauris.
+                    </p>
+
+                    <p class="h6">
+                        <li>Free Wi-Fi Zone</li>
+                    </p>
+                    <p>
+                        Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam
+                        id odio
+                        sit amet mauris.
+                    </p>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- hot deals end -->
+
+
+    <!-- why the gym -->
+
+    <div class="container-fluids mt-5">
+        <p class="h3 text-danger text-center"><u>WHY THE GYM</u></p>
+        <div class="row mt-5">
+
+            <div id="bor1" class="col-sm-6">
+                <img class="mx-auto d-block" src="gym_img/icon-support.png" alt="">
+                <p class="h5 text-center">Support</p>
+                <p class="ps-2">Every member gets a free, personalized Get Started Plan when they join. Our friendly,
+                    professional
+                    staff is trained to help you along your fitness journey, no matter how much support you need.
+                </p>
+                <hr>
+            </div>
+
+
+            <div class="col-sm-6">
+                <img class="mx-auto d-block" src="gym_img/icon-tools-training.png" alt="">
+                <p class="h5 text-center">Tools & Training</p>
+                <p> Getting to a healthier place is about more than going to the gym. That's why we offer personal
+                    training and classes when you're here, and the right tools to keep you on track when you're not.
+                </p>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div id="bor2" class="col-sm-6">
+                <img class="mx-auto d-block" src="gym_img/icon-community.png" alt="">
+                <p class="h5 text-center">Community</p>
+                <p class="ps-2">
+                    You're not just joining a gym. You're joining a supportive community of like-minded people who are
+                    here to give you the encouragement you need.
+                </p>
+            </div>
+
+
+            <div class="col-sm-6">
+                <img class="mx-auto d-block" src="gym_img/icon-convenience.png" alt="">
+                <p class="h5 text-center">Convenience</p>
+                <p>
+                    With 24/7 access to more than 3,000 locations worldwide, you're joining the most convenient gym on
+                    the planet.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- why the gym end -->
+
+
+
+    <!-- footer start -->
+
+    <footer>
+        <div class="container-fluids bg-dark text-light mt-5 mb-0">
+            <p class="text-danger h4 text-center pt-3">OUR NETWORK</p>
+            <div class="row mt-4">
+                <div class="col ms-2">
+                    <p class="text-warning">PUNE</p>
+                    <p>THE GYM PITAMPURA</p>
+                    <p> GYM PATEL NAGAR</p>
+                    <p>THE GYM RAJOURI GARDEN</p>
+                    <p>THE GYM JANAKPURI</p>
+                    <p>THE GYM PASCHIM VIHAR</p>
+                    <p>THE GYM MODEL TOWN</p>
+                </div>
+
+                <div class="col">
+                    <p class="text-warning"> HYDERABAD </p>
+                    <p> THE GYM MALVIYA NAGAR</p>
+                    <p> THE GYM SHALIMAR BAGH</p>
+                    <p> THE GYM ROHINI, SEC 15</p>
+                    <p> THE GYM ROHINI, SEC 9</p>
+                    <p> THE GYM ASHOK VIHAR</p>
+                    <p> THE GYM KAILASH COLONY</p>
+                    <p> THE GYM KAROLBAGH</p>
+                </div>
+
+                <div class="col">
+                    <p class="text-warning">DEHLI</p>
+                    <p>THE GYM PITAMPURA</p>
+                    <p> GYM PATEL NAGAR</p>
+                    <p>THE GYM RAJOURI GARDEN</p>
+                    <p>THE GYM JANAKPURI</p>
+                    <p>THE GYM PASCHIM VIHAR</p>
+                    <p>THE GYM MODEL TOWN</p>
+                </div>
+
+                <div class="col m-0">
+                    <p class="text-warning">BANGALORE</p>
+                    <p>THE GYM PITAMPURA</p>
+                    <p> GYM PATEL NAGAR</p>
+                    <p>THE GYM RAJOURI GARDEN</p>
+                    <p>THE GYM JANAKPURI</p>
+                    <p>THE GYM PASCHIM VIHAR</p>
+                    <p>THE GYM MODEL TOWN</p>
+                </div>
+            </div>
+
+            <div class="text-center align-items-center justify-content-center">
+
+                <a href="https://www.instagram.com/cultfitOfficial/" target="_main" class="logo">
+                    <i style="font-size: 35px;" class="fa-brands fa-instagram mx-2 my-5"></i></a>
+
+                <a href="https://www.facebook.com/cultfitofficial" target="_main" class="logo">
+                    <i style="font-size: 35px;" class="fa-brands fa-facebook mx-2 my-5"></i></a>
+
+                <a href="https://x.com/cultfitOfficial?mx=2" target="_main" class="logo">
+                    <i style="font-size: 35px;" class="fa-brands fa-twitter mx-2 my-5"></i></a>
+            </div>
+
+            <p class="text-light m-2 text-center align-items-center justify-content-center">The Gym <i
+                    class="fa-regular fa-copyright"></i> 2024 Fit & Fine Pvt Ltd</p>
+        </div>
+    </footer>
+
+    <!-- footer end -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
